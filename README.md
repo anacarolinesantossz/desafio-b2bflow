@@ -1,6 +1,6 @@
 # Desafio b2bflow - Estágio em Desenvolvimento Python
 
-Este projeto é uma automação para leitura de contatos no **Supabase** e envio de mensagens personalizadas via **Z-API** (WhatsApp).
+Esse projeto é uma automação para leitura de contatos no **Supabase** e envio de mensagens personalizadas via **Z-API** (WhatsApp).
 
 ## Tecnologias utilizadas
 - Python
