@@ -1,15 +1,24 @@
-# Desafio b2bflow - Estágio em Desenvolvimento Python
+# Desafio b2bflow
 
-Esse projeto é uma automação para leitura de contatos no **Supabase** e envio de mensagens personalizadas via **Z-API** (WhatsApp).
+Automação para integração entre Supabase e Z-API.
 
-## Tecnologias utilizadas
-- Python
-- Supabase (Banco de dados)
-- Z-API (WhatsApp API)
+## 1. Variáveis de Ambiente
+Crie um arquivo `.env` na raiz do projeto (baseado no `.env.example`) e configure:
+* `SUPABASE_URL`
+* `SUPABASE_KEY`
+* `ZAPI_INSTANCE`
+* `ZAPI_TOKEN`
 
-## Configuração do Projeto
+## 2. Setup do Banco (Supabase)
+Crie uma tabela chamada `contatos` com as colunas:
+* `nome` (text)
+* `telefone` (text)
 
-### 1. Pré-requisitos
-Certifique-se de ter o Python instalado no seu computador. Instale as bibliotecas necessárias rodando:
+*Nota: Certifique-se de habilitar o acesso `SELECT` para a role `anon` nas políticas (RLS) da tabela.*
+
+## 3. Como rodar
+Instale as dependências:
 ```bash
 pip install supabase requests python-dotenv
+
+python main.py
